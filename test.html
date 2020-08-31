@@ -4,15 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./js/md5.min.js"></script>
+    <script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+    <!-- <script src="./js/md5.min.js"></script> -->
 </head>
 <body>
+    <button id="btn">点击</button>
+
     <script>
-        let pwd = "123456"
-        let newPwd = md5(pwd)
-        let newPwd2 = md5("e10adc3949ba59abbe56e057f20f883e")
-        console.log(newPwd);
-        console.log(newPwd2);
+        // let pwd = "123456"
+        // let newPwd = md5(pwd)
+        // let newPwd2 = md5("e10adc3949ba59abbe56e057f20f883e")
+        // console.log(newPwd);
+        // console.log(newPwd2);
+
+        // let btn = document.getElementsByTagName("button")[0]
+        // btn.addEventListener("click",()=>{
+        //     console.log("11111");
+        // })
+        // btn.addEventListener("click",()=>{
+        //     console.log("2222");
+        // })
+
+        let f1 = function(name){
+            console.log("第一件事,姓名："+name);
+        }
+        let f2= function(_,age){
+            console.log("第er件事，年龄："+age);
+        }
+        let $plan = $.Callbacks()
+        $plan.add(f1)
+        $plan.add(f2)
+        $plan.add(f2)
+        $plan.add(f2)
+        $plan.add(f2)
+
+        $("#btn").click(function(){
+            $plan.fire("hello",111)
+        })
     </script>
 </body>
 </html>
