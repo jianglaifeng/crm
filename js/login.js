@@ -24,7 +24,7 @@ $(function(){
         let res = await axios.post("/user/login",{account,password})
         // console.log(res);
         if(parseInt(res.code) ===0){
-            alert("登录成功")
+            // alert("登录成功")
             window.location.href="index.html"
             return
         }

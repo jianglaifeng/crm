@@ -78,8 +78,8 @@ $(function () {
 					客户管理
 				</h3>
 				<nav class="item">
-					<a href="./page/customerlist.html.html" target="iframeBox">我的客户</a>
-					<a href="./page/customerlist.html" target="iframeBox">全部客户</a>
+					<a href="./page/customerlist.html?lx=my" target="iframeBox">我的客户</a>
+					<a href="./page/customerlist.html?lx=all" target="iframeBox">全部客户</a>
 					<a href="./page/useradd.html" target="iframeBox">新增客户</a>
 				</nav>
 			</div>

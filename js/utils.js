@@ -11,7 +11,7 @@ function formatTime(templete = "{0}年{1}月{2}日 {3}时{4}分{5}秒") {
 String.prototype.formatTime = formatTime;
 
 /* 
- * queryURLParams：获取URL地址问号和面的参数信息（可能也包含HASH值）
+ * queryURLParams：获取URL地址问号后面的参数信息（可能也包含HASH值）
  */
 function queryURLParams() {
 	let obj = {};
